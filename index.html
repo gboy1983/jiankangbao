@@ -1,5 +1,6 @@
+
 <body>
-    <p align="center" style="margin-top: 65px;"><size = "17" color="#99FF00">2022年4月22日</p >
+    <p align="center" style="margin-top: 65px;"><size = "17" color="#99FF00">2022年4月29日</p >
    </body>
    
    <html lang="zh-cn">
@@ -24,9 +25,9 @@
    <script>
        function time() {
            var date = new Date();
-           var hour = date.getHours();
-           var minutes = date.getMinutes();
-           var seconds = date.getSeconds();
+           var hour = checkTime(date.getHours());
+           var minutes = checkTime(date.getMinutes());
+           var seconds = checkTime(date.getSeconds());
            var str = "" + hour + ":" + minutes + ":" + seconds + "";
            var div1 = document.getElementById("div1");
            div1.innerHTML = str;
@@ -44,7 +45,7 @@
    </html>
    <style type="text/css">
     body{
-     background: url("https://gboy1983.github.io/saoma/saoma.gif") no-repeat TOP center scroll;
+     background: url("https://gboy1983.github.io/back.gif") no-repeat TOP center scroll;
                    /*兼容浏览器版本*/
                    -webkit-background-size: cover;
                    -o-background-size: cover;                
@@ -60,11 +61,11 @@
     21**************14
 </p>
 <p style="text-align: center; margin-top: 0.05cm; margin-left: 202px; line-height: 1.2em;">
-    04-22 08:31
+    04-29 07:32
 </p>
 <p style="text-align: center; margin-top: 0.05cm; margin-left: 200px; line-height: 1.2em;">
     <color="#ff0000">
-        <span style="color: rgb(255, 0, 0);">04-22 24:00</span>
+        <span style="color: rgb(255, 0, 0);">04-29 24:00</span>
     </color="#ff0000">
 </p>
    </body>
