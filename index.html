@@ -1,46 +1,8 @@
-   <html lang="zh-cn">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport"
-             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-       <title>Document</title>
-    <style type="text/css">
-     div{
-      height: 200px;
-      width:200px;
-      text-align: center; 
-      line-height: 180px;/*文字水平居中*/
-      margin:auto;/*div水平居中*/
-     }
-    </style>
-   </head>
-   <body>
-   <div id="div1" style="margin-top: -90px;"></div>
-   <script>
-       function time() {
-           var date = new Date();
-           var hour = checkTime(date.getHours());
-           var minutes = checkTime(date.getMinutes());
-           var seconds = checkTime(date.getSeconds());
-           var str = "" + hour + ":" + minutes + ":" + seconds + "";
-           var div1 = document.getElementById("div1");
-           div1.innerHTML = str;
-       }
-     function checkTime(i)   
-               {   
-                   if (i<10){
-                       i="0" + i;
-                   }   
-                     return i;
-               }  
-       setInterval(time,1000);
-   </script>
-   </body>
+</body>
    </html>
    <style type="text/css">
     body{
-     background: url("https://gboy1983.github.io/saoma/saoma.mp4") repeat TOP center;
+     background: url("https://gboy1983.github.io/saoma/saoma.mp4") repeat TOP left;
                    /*兼容浏览器版本*/
      background-size: cover
         }
