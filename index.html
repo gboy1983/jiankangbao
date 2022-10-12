@@ -44,6 +44,15 @@ style="background-size:980px 2160px;
 	</head>
 	<body>
 		<div id="all">
+			<div id="yy">
+			</div>
+			
+			<div id="2m">
+			</div>
+			
+			<div id="dd">
+                        </div>
+			
 			<div id="hh">
 				
 			</div>
@@ -66,6 +75,16 @@ style="background-size:980px 2160px;
 			
 			function timeClock(){
 				newDate = new Date();
+				year = newDate.getFullYear();
+			
+				mont = newDate.getMonth();
+				if (mont < 10){
+				        mont = "0" + mont;
+					
+				date = newDate.getDate();
+				if (date < 10){
+				        date = "0" + date;
+					
 				hour = newDate.getHours();
 				if (hour < 10){
 					hour = "0" + hour;
@@ -78,7 +97,9 @@ style="background-size:980px 2160px;
 				if (seco < 10){
 					seco = "0" + seco;
 				}
-				
+				document.getElementById("yy").innerHTML = year;
+				document.getElementById("2m").innerHTML = mont;
+				document.getElementById("dd").innerHTML = date;			
 				document.getElementById("hh").innerHTML = hour;
 				document.getElementById("mm").innerHTML = minu;
 				document.getElementById("ss").innerHTML = seco;
